@@ -12,108 +12,66 @@
 	<style>
 		html {
 			-webkit-text-size-adjust: none;
-			-ms-text-size-adjust: none
+			-ms-text-size-adjust: none;
 		}
 
 		.only_mob {
-			display: none !important
+			display: none !important;
 		}
 
-		@media only screen and (max-device-width:600px),
-		only screen and (max-width:600px) {
-			.mob_100 {
-				width: 100% !important;
-				max-width: 100% !important
-			}
-
-			.mob_full {
-				width: auto !important;
-				display: block !important;
-				padding: 0 10px !important
-			}
-
-			.mob_center {
-				text-align: center !important
-			}
-
-			.mob_center_bl {
-				margin-left: auto;
-				margin-right: auto
-			}
-
-			.mob_hidden {
-				display: none !important
-			}
-
-			.only_mob {
-				display: block !important
-			}
+		.mail_preheader {
+			display: none !important;
 		}
 
-		@media only screen and (max-width:600px) {
+		.main-wrapper {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.main-wrapper {
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+				padding-top: 20px !important;
+			}
+
 			.mob_100 {
 				width: 100% !important;
-				max-width: 100% !important
+				max-width: 100% !important;
 			}
 
 			.mob_100 img,
 			.mob_100 table {
-				max-width: 100% !important
+				max-width: 100% !important;
 			}
 
 			.mob_full {
 				width: auto !important;
 				display: block !important;
-				padding: 0 10px !important
+				padding: 0 10px !important;
 			}
 
 			.mob_center {
-				text-align: center !important
+				text-align: center !important;
 			}
 
 			.mob_center_bl {
 				margin-left: auto;
-				margin-right: auto
+				margin-right: auto;
 			}
 
 			.mob_hidden {
-				display: none !important
+				display: none !important;
 			}
 
 			.only_mob {
-				display: block !important
+				display: block !important;
 			}
-		}
 
-		.creative {
-			width: 100% !important;
-			max-width: 100% !important
-		}
-
-		.mail_preheader {
-			display: none !important
-		}
-
-		form input,
-		form textarea {
-			font-family: Arial, sans-serif;
-			width: 100%;
-			box-sizing: border-box;
-			font-size: 13px;
-			color: #000000;
-			outline: none;
-			padding: 0px 15px;
-		}
-
-		form textarea {
-			resize: vertical;
-			line-height: normal;
-			padding: 10px 15px;
-		}
-
-		form button {
-			border: 0px none;
-			cursor: pointer;
+			img {
+				max-width: 100% !important;
+				height: auto !important;
+			}
 		}
 	</style>
 	<!--[if (gte mso 9)|(IE)]> 	<style type="text/css">table {border-collapse: collapse !important;}.outf14{font-size:14px !important;}    .not_for_outlook, .not_for_outlook table,.only_mob, .only_mob table{mso-hide: all !important;display: none !important;font-size:0;max-height:0;line-height: 0;mso-hide: all;}.outpadding{padding-left: 0 !important;padding-right: 0 !important;}</style> 	<![endif]-->
@@ -123,7 +81,7 @@
 	<div class="full-wrap">
 		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="full-wrap">
 			<tr>
-				<td align="center" bgcolor="#edf1f0" style="line-height: normal; hyphens: none;">
+				<td align="center" class="main-wrapper" bgcolor="#edf1f0" style="line-height: normal; hyphens: none; padding-left: 0; padding-right: 0; padding-top: 0;">
 					<div> <!--[if !mso]> 	<!-->
 						<div class="mail_preheader" style="font-size: 0px; color: transparent; opacity: 0;"> <span
 								style="font-family: Arial, Helvetica, sans-serif; font-size: 0px; color: transparent; line-height: 0px;"></span>
@@ -181,7 +139,7 @@
 																								<div>
 																									<div style="line-height: 19px;"> <span
 																											style="font-family: Inter, sans-serif; font-weight: bold; font-size: 16px; color: #466c4b;">Hallo
-																											[NAME],</span> </div>
+																											{{NAME}},</span> </div>
 																									<div style="height: 16px; line-height: 16px; font-size: 14px;">&nbsp;
 																									</div>
 																								</div>
@@ -247,7 +205,7 @@
 																																		<tr>
 																																			<td align="center" valign="middle"
 																																				style="padding: 8px; border-radius: 16px;">
-																																				<div> <img src="[PRODUCT_IMG]" width="130"
+																																				<div> <img src="{{PRODUCT_IMG}}" width="130"
 																																						height="130" alt="" border="0"
 																																						style="display: block;"> </div>
 																																			</td>
@@ -284,7 +242,7 @@
 																																									<div>
 																																										<div style="line-height: 19px;">
 																																											<span
-																																												style="font-family: Inter, sans-serif; font-weight: bold; font-size: 16px; color: #466c4b;">[PRODUCT]</span>
+																																												style="font-family: Inter, sans-serif; font-weight: bold; font-size: 16px; color: #466c4b;">{{PRODUCT}}</span>
 																																										</div>
 																																										<div
 																																											style="height: 8px; line-height: 8px; font-size: 6px;">
@@ -294,7 +252,7 @@
 																																												style="font-family: Inter, sans-serif; font-weight: bold; font-size: 14px; color: #292e2a;"><span
 																																													style="text-decoration: none;">Betrag:</span><span
 																																													style="font-weight: normal; text-decoration: none;">
-																																													[PRICE] €</span></span> </div>
+																																													{{PRICE}} €</span></span> </div>
 																																										<div
 																																											style="height: 8px; line-height: 8px; font-size: 6px;">
 																																											&nbsp;</div>
@@ -303,7 +261,7 @@
 																																												style="font-family: Inter, sans-serif; font-weight: bold; font-size: 14px; color: #292e2a;"><span
 																																													style="text-decoration: none;">Bestelldatum:</span><span
 																																													style="font-weight: normal; text-decoration: none;">
-																																													[DT_PURHCASE]</span></span>
+																																													{{DT_PURHCASE}}</span></span>
 																																										</div>
 																																										<div
 																																											style="height: 8px; line-height: 8px; font-size: 6px;">
@@ -313,7 +271,7 @@
 																																												style="font-family: Inter, sans-serif; font-weight: bold; font-size: 14px; color: #292e2a;"><span
 																																													style="text-decoration: none;">Anbieter:
 																																												</span><span
-																																													style="font-weight: normal; text-decoration: none;">[PRODUCER_NAME]</span></span>
+																																													style="font-weight: normal; text-decoration: none;">{{PRODUCER_NAME}}</span></span>
 																																										</div>
 																																									</div>
 																																								</td>
@@ -348,7 +306,7 @@
 																											style="font-family: Inter, sans-serif; font-size: 14px; color: #6c6d6f;"><span
 																												style="text-decoration: none;">Fragen zum Produkt oder zur
 																												Lieferung?<br>Kontaktiere den Anbieter hier: </span><span
-																												style="font-weight: bold; text-decoration: none;">[PRODUCER_EMAIL]</span></span>
+																												style="font-weight: bold; text-decoration: none;">{{PRODUCER_EMAIL}}</span></span>
 																									</div>
 																									<div style="height: 12px; line-height: 12px; font-size: 10px;">&nbsp;
 																									</div>
