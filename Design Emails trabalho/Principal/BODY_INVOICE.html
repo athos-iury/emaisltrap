@@ -1,353 +1,218 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-	xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700" />
+	<title>Fatura de Compra</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="x-apple-disable-message-reformatting">
-	<title></title>
 	<style>
 		html {
-			-webkit-text-size-adjust: none;
-			-ms-text-size-adjust: none;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
 		}
 		body {
 			margin: 0;
 			padding: 0;
 		}
-		.only_mob {
-			display: none !important;
+		.text-title {
+			font-family: Inter, sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			color: #1a2229;
+			line-height: 29px;
+			margin: 0;
+			padding: 0;
 		}
-		.creative {
-			width: 100% !important;
-			max-width: 100% !important;
+		.text-body {
+			font-family: Inter, sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			color: #000000;
+			line-height: 150%;
+			margin: 0;
+			padding: 0;
 		}
-		.mail_preheader {
-			display: none !important;
+		.text-body-small {
+			font-family: Inter, sans-serif;
+			font-size: 12px;
+			font-weight: 400;
+			color: #000000;
+			margin: 0;
+			padding: 0;
 		}
-		@media only screen and (max-device-width:600px),
-		only screen and (max-width:600px) {
-			.mob_100 {
-				width: 100% !important;
-				max-width: 100% !important;
-			}
-			.mob_100 img,
-			.mob_100 table {
-				max-width: 100% !important;
-			}
-			.mob_full {
-				width: auto !important;
-				display: block !important;
-				padding: 0 10px !important;
-			}
-			.mob_center {
-				text-align: center !important;
-			}
-			.mob_center_bl {
-				margin-left: auto;
-				margin-right: auto;
-			}
-			.mob_hidden {
-				display: none !important;
-			}
-			.only_mob {
-				display: block !important;
-			}
-			.full-wrap {
-				padding-left: 0 !important;
-				padding-right: 0 !important;
-			}
-			td[bgcolor="#edf1f0"] {
+		.text-footer {
+			font-family: Inter, sans-serif;
+			font-size: 12px;
+			font-weight: 400;
+			color: #ffffff;
+			margin: 0;
+			padding: 0;
+		}
+		@media only screen and (max-width: 600px) {
+			.mobile-padding {
 				padding-left: 16px !important;
 				padding-right: 16px !important;
-				padding-top: 20px !important;
 			}
-			table[width="700"],
-			table[style*="max-width: 700px"] {
-				width: 100% !important;
-				max-width: 100% !important;
-			}
-			table[width="600"],
-			table[style*="max-width: 600px"] {
-				width: 100% !important;
-				max-width: 100% !important;
-			}
-			table[width="146"],
-			table[style*="max-width: 146px"] {
-				width: 100% !important;
-				max-width: 100% !important;
-			}
-			td[style*="padding: 16px 20px"] {
-				padding: 16px 20px !important;
-			}
-			td[style*="padding: 0px 20px"] {
-				padding: 0px 20px !important;
-			}
-			div[style*="width: 146px"] {
-				width: 100% !important;
-				max-width: 100% !important;
-				display: block !important;
-				margin-bottom: 16px !important;
-			}
-			div[style*="max-width: 454px"] {
-				width: 100% !important;
-				max-width: 100% !important;
-				display: block !important;
-			}
-			td[style*="font-size: 0px"] {
-				display: block !important;
-			}
-			table[bgcolor="#f2f2f2"] {
-				width: 100% !important;
-				max-width: 100% !important;
-			}
-			table[bgcolor="#f2f2f2"] td {
-				padding: 20px !important;
-			}
-			table[bgcolor="#dff3e7"] {
+			.mobile-content-padding {
 				padding-left: 20px !important;
 				padding-right: 20px !important;
+			}
+			.mobile-header-padding {
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+				padding-top: 10px !important;
+			}
+			table[width="700"] {
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+			table[width="600"] {
+				width: 100% !important;
+				max-width: 100% !important;
 			}
 			img {
 				max-width: 100% !important;
 				height: auto !important;
 			}
-			td[height="40"] {
-				height: 20px !important;
-			}
-		}
-		form input,
-		form textarea {
-			font-family: Arial, sans-serif;
-			width: 100%;
-			box-sizing: border-box;
-			font-size: 13px;
-			color: #000000;
-			outline: none;
-			padding: 0px 15px;
-		}
-		form textarea {
-			resize: vertical;
-			line-height: normal;
-			padding: 10px 15px;
-		}
-		form button {
-			border: 0px none;
-			cursor: pointer;
 		}
 	</style>
-	<!--[if (gte mso 9)|(IE)]> 	       <style type="text/css">table {border-collapse: collapse !important;}.outf14{font-size:14px !important;}    .not_for_outlook, .not_for_outlook table,.only_mob, .only_mob table{mso-hide: all !important;display: none !important;font-size:0;max-height:0;line-height: 0;mso-hide: all;}.outpadding{padding-left: 0 !important;padding-right: 0 !important;}</style>       <![endif]-->
 </head>
 
-<body class="body" style="padding:0;margin:0">
-	<div class="full-wrap">
-		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="full-wrap" style="padding-left: 0; padding-right: 0;">
+<body>
+	<div
+		style="font-size: 0px; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all">
+	</div>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-padding" style="padding-top: 10px;">
+		<tr>
+			<td>
+				<center lang="pt" dir="auto"
+					style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%">
+					<table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#fbfbfc" width="700"
+						style="border-radius: 16px; background-color: #fbfbfc; width: 700px; max-width: 100%; border-spacing: 0; font-family: Inter; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
 			<tr>
-				<td align="center" bgcolor="#edf1f0" style="line-height: normal; hyphens: none; padding-left: 16px; padding-right: 16px; padding-top: 20px;">
-					<div class="mail_preheader" style="font-size: 0px; color: transparent; opacity: 0;">
-						<span style="font-family: Arial, Helvetica, sans-serif; font-size: 0px; color: transparent; line-height: 0px;"></span>
-					</div>
-					<div>
-						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width: 700px;">
-							<tr>
-								<td align="center" valign="top" bgcolor="#fbfbfc" style="border-radius: 16px;">
-									<div style="overflow: hidden; border-radius: 16px;">
-										<div>
-											<table border="0" cellspacing="0" cellpadding="0" width="100%">
-												<tr>
-													<td align="center" valign="middle" bgcolor="#40b870" style="padding: 16px 20px;">
-														<table border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width: 600px;">
-															<tr>
-																<td align="center" valign="middle">
-																	<img src="https://storage.googleapis.com/md_images_email/logo.png" width="191" height="65" alt="" border="0" style="display: block;">
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-										</div>
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<td height="40" style="height: 40px;">&nbsp; </td>
-											</tr>
-										</table>
-										<div>
-											<table border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width: 600px;">
-												<tr>
-													<td align="center" valign="middle" style="border-radius: 10px;">
-														<div>
-															<div>
-																<table border="0" cellspacing="0" cellpadding="0" width="100%">
-																	<tr>
-																		<td align="center" valign="middle" bgcolor="#f2f2f2" style="border-radius: 12px;">
-																			<div style="overflow: hidden; border-radius: 12px;">
-																				<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																					<tr>
-																						<td align="center" valign="middle" style="font-size: 0px;">
-																							<div style="display: inline-block; vertical-align: middle; width: 146px;">
-																								<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-																									<tr>
-																										<td align="center" valign="top" class="outf14" style="font-size: large;">
-																											<table border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width: 146px;">
-																												<tr>
-																													<td align="center" valign="middle" style="padding: 8px; border-radius: 16px;">
-																														<img src="{{IMG_PRODUCT}}" width="130" height="130" alt="" border="0" style="display: block;">
-																													</td>
-																												</tr>
-																											</table>
-																										</td>
-																									</tr>
-																								</table>
-																							</div>
-																							<div style="display: inline-block; vertical-align: middle; width: 100%; max-width: 454px;">
-																								<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-																									<tr>
-																										<td align="center" valign="top" class="outf14" style="font-size: large;">
-																											<table border="0" cellspacing="0" cellpadding="0" width="100%">
-																												<tr>
-																													<td align="center" valign="middle" style="border-radius: 16px;">
-																														<div style="overflow: hidden; border-radius: 16px;">
-																															<table border="0" cellspacing="0" cellpadding="0" width="100%">
-																																<tr>
-																																	<td align="left" valign="middle" style="padding: 0px 20px;">
-																																		<div style="line-height: 19px;">
-																																			<span style="font-family: Inter, sans-serif; font-weight: bold; font-size: 16px; color: #466c4b;">{{PRODUCT}}</span>
-																																		</div>
-																																		<div style="height: 8px; line-height: 8px; font-size: 6px;">&nbsp;</div>
-																																		<div style="line-height: 17px;">
-																																			<span style="font-family: Inter, sans-serif; font-weight: bold; font-size: 14px; color: #292e2a;">
-																																				<span style="text-decoration: none;">Anzahl:</span>
-																																				<span style="font-weight: normal; text-decoration: none;"> {{QTD}}</span>
-																																			</span>
-																																		</div>
-																																		<div style="height: 8px; line-height: 8px; font-size: 6px;">&nbsp;</div>
-																																		<div style="line-height: 17px;">
-																																			<span style="font-family: Inter, sans-serif; font-weight: bold; font-size: 14px; color: #292e2a;">
-																																				<span style="text-decoration: none;">Preis:</span>
-																																				<span style="text-decoration: none;">€ {{VALUE}}</span>
-																																			</span>
-																																		</div>
-																																		<div style="height: 8px; line-height: 8px; font-size: 6px;">&nbsp;</div>
-																																		<div style="line-height: 17px;">
-																																			<span style="font-family: Inter, sans-serif; font-weight: bold; font-size: 14px; color: #292e2a;">
-																																				<span style="text-decoration: none;">Adresse:</span>
-																																				<span style="font-weight: normal; font-size: 12px; text-decoration: none;"> {{ADDRESS}}</span>
-																																			</span>
-																																		</div>
-																																	</td>
-																																</tr>
-																															</table>
-																														</div>
-																													</td>
-																												</tr>
-																											</table>
-																										</td>
-																									</tr>
-																								</table>
-																							</div>
-																						</td>
-																					</tr>
-																				</table>
-																				<div style="height: 16px; line-height: 16px; font-size: 14px;"> &nbsp;</div>
-																			</div>
-																		</td>
-																	</tr>
-																</table>
-															</div>
-															<div>
-																<table border="0" cellspacing="0" cellpadding="0" width="100%">
-																	<tr>
-																		<td align="center" valign="middle">
-																			<table border="0" cellspacing="0" cellpadding="0" width="100%">
-																				<tr>
-																					<td align="left">
-																						<div style="line-height: 19px;">
-																							<span style="font-family: Inter, sans-serif; font-weight: bold; font-size: 16px; color: #466c4b;">Hallo {{NAME}}!</span>
-																						</div>
-																						<div style="height: 9px; line-height: 9px; font-size: 7px;">&nbsp;</div>
-																					</td>
-																				</tr>
-																			</table>
-																			<table border="0" cellspacing="0" cellpadding="0" width="100%">
-																				<tr>
-																					<td align="left">
-																						<div style="line-height: 17px;">
-																							<span style="font-family: Inter, sans-serif; font-size: 14px; color: #6c6d6f;">
-																								<span style="text-decoration: none;">vielen Dank für deinen Kauf von {{PRODUCT}}!</span>
-																							</span>
-																						</div>
-																						<div style="height: 12px; line-height: 12px; font-size: 10px;">&nbsp;</div>
-																						<div style="line-height: 17px;">
-																							<span style="font-family: Inter, sans-serif; font-size: 14px; color: #6c6d6f;">
-																								<span style="text-decoration: none;">Anbei findest du die Rechnung.</span>
-																							</span>
-																						</div>
-																						<div style="height: 12px; line-height: 12px; font-size: 10px;">&nbsp;</div>
-																						<div style="line-height: 17px;">
-																							<span style="font-family: Inter, sans-serif; font-size: 14px; color: #6c6d6f;">
-																								<span style="font-weight: bold; text-decoration: none;">Gesamtbetrag:</span>
-																								<span style="text-decoration: none;"> {{AMOUNT}} €</span>
-																							</span>
-																						</div>
-																						<div style="height: 12px; line-height: 12px; font-size: 10px;">&nbsp;</div>
-																						<div style="line-height: 17px;">
-																							<span style="font-family: Inter, sans-serif; font-size: 14px; color: #6c6d6f;">
-																								Falls du Fragen zur Rechnung oder zu deinem Kauf hast, stehen wir dir gerne zur Verfügung. Kontaktiere uns einfach über unsere Support-E-Mail: support@multidrop.com
-																							</span>
-																						</div>
-																						<div style="height: 12px; line-height: 12px; font-size: 10px;">&nbsp;</div>
-																						<div style="line-height: 17px;">
-																							<span style="font-family: Inter, sans-serif; font-size: 14px; color: #6c6d6f;">
-																								Mit besten Grüßen,<br>Dein Multidrop-Team
-																							</span>
-																						</div>
-																						<div style="height: 12px; line-height: 12px; font-size: 10px;">&nbsp;</div>
-																					</td>
-																				</tr>
-																			</table>
-																		</td>
-																	</tr>
-																</table>
-															</div>
-														</div>
-													</td>
-												</tr>
-											</table>
-										</div>
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
-											<tr>
-												<td height="40" style="height: 40px;">&nbsp;</td>
-											</tr>
-										</table>
-										<div>
-											<table border="0" cellspacing="0" cellpadding="0" width="100%">
-												<tr>
-													<td align="center" valign="top" bgcolor="#dff3e7" style="padding: 16px 0px;">
-														<table border="0" cellspacing="0" cellpadding="0" width="100%">
-															<tr>
-																<td align="center" valign="top" style="padding: 0px 0px 10px;">
-																	<div style="line-height: 14px;">
-																		<span style="font-family: Inter, sans-serif; font-size: 12px; color: #466c4b;">© 2024 Multidrop. Alle Rechte vorbehalten.</span>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
+				<td width="100.00%" class="mobile-header-padding" style="width: 100%">
+					<table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#252424" width="700"
+						height="72" style="background-color: #252424; width: 700px; max-width: 100%; height: 72px; border-spacing: 0; border-top-left-radius: 16px; border-top-right-radius: 16px; overflow: hidden;">
+						<tr>
+							<td align="center" valign="middle" style="padding: 16px 20px;"> <img src="https://storage.googleapis.com/academy-course-dev/multidrop/md-logo.png" width="241"
+									height="40" alt="" border="0"
+									style="max-width: 100%; width: 241px; height: 40px; display: block" /> </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="mobile-content-padding" style="padding-top: 16px; padding-bottom: 16px; width: 100%">
+					<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="600"
+						style="width: 600px; max-width: 100%; border-spacing: 0">
+						<!-- Informações do Produto -->
+						<tr>
+							<td align="left" style="padding-bottom: 16px;">
+								<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="border-spacing: 0;">
+									<tr>
+										<td align="left" valign="top" style="padding-right: 16px;">
+											<img src="{{IMG_PRODUCT}}" width="130" height="130" alt="" border="0" style="display: block; border-radius: 8px;">
+										</td>
+										<td align="left" valign="top" style="vertical-align: top;">
+											<p class="text-body" style="text-align: left; margin: 0; padding: 0; font-weight: 700; margin-bottom: 8px;">
+												<strong>{{PRODUCT}}</strong>
+											</p>
+											<p class="text-body" style="text-align: left; margin: 0; padding: 0; margin-bottom: 8px;">
+												<strong>Preço:</strong> {{PRICE}}
+											</p>
+											<p class="text-body" style="text-align: left; margin: 0; padding: 0; margin-bottom: 8px;">
+												<strong>Data da Compra:</strong> {{PURCHASE_DATE}}
+											</p>
+											<p class="text-body" style="text-align: left; margin: 0; padding: 0;">
+												<strong>Fornecedor:</strong> {{SUPPLIER}}
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- Saudação -->
+						<tr>
+							<td align="left" style="padding-top: 16px; padding-bottom: 16px;">
+								<p style="font-family: Inter, sans-serif; font-weight: 700; font-size: 18px; line-height: 100%; letter-spacing: 0%; margin: 0; padding: 0; mso-line-height-rule: exactly;">
+									Olá {{NAME}}!🍀
+								</p>
+							</td>
+						</tr>
+						<!-- Mensagem principal -->
+						<tr>
+							<td align="left" style="padding-bottom: 16px;">
+								<p class="text-body" style="text-align: left; margin: 0; padding: 0;">
+									Obrigado por adquirir o <strong>{{PRODUCT}}</strong>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="padding-bottom: 16px;">
+								<p class="text-body" style="text-align: left; margin: 0; padding: 0;">
+									Você encontrará a fatura em anexo.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="padding-bottom: 16px;">
+								<p class="text-body" style="text-align: left; margin: 0; padding: 0;">
+									<strong>Total:</strong> <strong>{{AMOUNT}} €</strong>
+								</p>
+							</td>
+						</tr>
+						<!-- Divider -->
+						<tr>
+							<td align="center" style="padding-top: 16px; padding-bottom: 16px;">
+								<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="600" style="width: 600px; max-width: 100%;">
+									<tr>
+										<td style="border-top: 1px solid #D9DBDD; height: 0px; line-height: 0px; font-size: 0px;">
+											&nbsp;
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- Informações de Suporte -->
+						<tr>
+							<td align="left" style="padding-top: 16px;">
+								<p class="text-body" style="text-align: left; margin: 0; padding: 0;">
+									Se tiver alguma dúvida sobre sua fatura ou compra, teremos prazer em ajudar. Basta entrar em contato conosco pelo nosso e-mail de suporte: <strong>support@multidrop.com</strong>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" style="padding-top: 16px;">
+								<p class="text-body" style="text-align: left; margin: 0; padding: 0;">
+									Atenciosamente,<br>Sua equipe Multidrop
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="100.00%" align="center" style="width: 100%">
+					<table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#252424" width="700"
+						height="72" style="background-color: #252424; width: 700px; max-width: 100%; height: 72px; border-spacing: 0; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; overflow: hidden;">
+						<tr>
+							<td align="center" valign="middle" style="padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px;">
+								<p class="text-footer" style="text-align: center; margin: 0; padding: 0; font-family: Inter, sans-serif; font-size: 12px; font-weight: 400; color: #ffffff; line-height: 150%;">
+									© 2023 Multidrop. Todos os direitos reservados. Se não desejar receber esses e-mails, você pode cancelar a assinatura.
+								</p>
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 		</table>
-	</div>
-</body>  
+				</center>
+			</td>
+		</tr>
+	</table>
+</body>  
 
 </html>
