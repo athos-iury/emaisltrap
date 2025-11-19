@@ -227,13 +227,19 @@
 						<!-- Card Comissão -->
 						<tr>
 							<td align="left" style="padding-top: 16px; padding-bottom: 16px;">
-								<table cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#41B871" width="600" style="width: 600px; max-width: 100%; border: 1px solid #41B871; border-radius: 12px; height: 108px;">
+								<!--[if mso]>
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" strokecolor="#41B871" fillcolor="#41B871" style="width:600px;height:108px;border-radius:12px;overflow:hidden;">
+								<v:fill type="gradient" color="#41B871" color2="#367C50" angle="135"/>
+								<w:anchorlock/>
+								<center style="padding:16px;">
+								<![endif]-->
+								<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="600" style="width: 600px; max-width: 100%; border: 1px solid #41B871; border-radius: 12px; height: 108px; background: linear-gradient(135deg, #41B871 0%, #367C50 100%);">
 									<tr>
 										<td valign="middle" style="padding: 16px;">
 											<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="width: 100%;">
 												<tr>
 													<td align="left" valign="middle" class="mobile-col-block" style="padding-right: 20px; width: 50%;">
-														<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="width: 100%;">
+														<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-spacing: 0;">
 															<tr>
 																<td align="left" valign="middle" style="padding: 0;">
 																	<span class="material-symbols-outlined" style="font-size: 20px; vertical-align: middle; color: #ffffff; margin-right: 10px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; width: 32px; height: 32px; display: inline-block; text-align: center; line-height: 32px;">attach_money</span>
@@ -248,12 +254,14 @@
 														</table>
 													</td>
 													<td align="right" valign="middle" class="mobile-col-block" style="width: 50%;">
-														<table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="width: 100%;">
+														<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-spacing: 0; margin-left: auto;">
 															<tr>
 																<td align="right" valign="middle" style="padding: 0;">
 																	<div style="text-align: right;">
-																		<div style="font-family: Inter, sans-serif; font-size: 32px; font-weight: 700; color: #ffffff; line-height: 1.2;">{{COMMISSION}} €</div>
-																		<div style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 400; color: rgba(255, 255, 255, 0.9); line-height: 1.2; margin-top: 4px;">Conquistada</div>
+																		<div style="font-family: Inter, sans-serif; font-size: 32px; font-weight: 700; color: #ffffff; line-height: 1.2; white-space: nowrap;">
+																			<span>{{COMMISSION}}</span> <span>€</span>
+																		</div>
+																		<div style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 400; color: rgba(255, 255, 255, 0.9); line-height: 1.2; margin-top: 4px; text-align: right;">Conquistada</div>
 																	</div>
 																</td>
 															</tr>
@@ -264,6 +272,10 @@
 										</td>
 									</tr>
 								</table>
+								<!--[if mso]>
+								</center>
+								</v:rect>
+								<![endif]-->
 							</td>
 						</tr>
 						<!-- Cards Período de Aprovação e Continue o Momentum -->
